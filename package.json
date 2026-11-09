@@ -1,0 +1,23 @@
+{
+  "name": "ektu-ai-payment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build && node scripts/build-worker.mjs",
+    "db:generate": "drizzle-kit generate",
+    "build:pages": "vite build --mode pages && node scripts/prepare-pages.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "vite": "8.0.13",
+    "@vitejs/plugin-react": "6.0.2",
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2",
+    "wrangler": "4.92.0"
+  }
+}
